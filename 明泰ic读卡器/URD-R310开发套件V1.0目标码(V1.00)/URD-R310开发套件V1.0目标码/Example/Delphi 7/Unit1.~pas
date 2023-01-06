@@ -1,0 +1,276 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    ListBox1: TListBox;
+    Label2: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    procedure FormShow(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  icdev:longint;
+  st:integer;
+  data1,data2:Array[0..26]of char;
+  password:Array[0..5]of char;
+  passwordesc:pchar;
+  length,offset:smallint;
+  counter:smallint;  // ,status
+  status:Array[0..18]of Char;
+  proval:pchar;
+
+    //use 24 function
+  function chk_24c01a(icdev:longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'chk_24c01a';
+  function swr_24c01a(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'swr_24c01a';
+  function srd_24c01a(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'srd_24c01a';
+
+
+    //operate sle 4428
+  function swr_4428(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'swr_4428';
+  function srd_4428(icdev: longint;offset:smallint;length:smallint; data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'srd_4428';
+  function chk_4428(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'chk_4428';
+
+  function rdwpb_4428(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rdwpb_4428';
+  function wrwpb_4428(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'wrwpb_4428';
+  function wpr_4428(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'wpr_4428';
+
+  function csc_4428(icdev: longint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'csc_4428';
+  function wsc_4428(icdev: longint;length:smallint; password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'wsc_4428';
+  function rsc_4428(icdev: longint;length:smallint; password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rsc_4428';
+  function rsct_4428(icdev: longint;counter:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rsct_4428';
+  //  operate sle 4442
+  function swr_4442(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'swr_4442';
+  function srd_4442(icdev: longint;offset:smallint;length:smallint; data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'srd_4442';
+  function prd_4442(icdev: longint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'prd_4442';
+  function pwr_4442(icdev: longint;offset:smallint;length:smallint;data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'pwr_4442';
+  function chk_4442(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'chk_4442';
+
+  function csc_4442(icdev: longint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'csc_4442';
+  function wsc_4442(icdev: longint;length:smallint; password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'wsc_4442';
+  function rsc_4442(icdev: longint;length:smallint; password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rsc_4442';
+  function rsct_4442(icdev: longint;counter:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rsct_4442';
+  //1604
+  function swr_1604(icdev: longint;zone:smallint;offset:smallint;length:smallint; data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'swr_1604';
+  function srd_1604(icdev: longint;zone:smallint;offset:smallint;length:smallint; data1:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'srd_1604';
+  function ser_1604(icdev: longint;zone:smallint;offset:smallint;length:smallint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'ser_1604';
+
+  function csc_1604(icdev: longint;zone:smallint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'csc_1604';
+  function wsc_1604(icdev: longint;zone:smallint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'wsc_1604';
+  function rsc_1604(icdev: longint;zone:smallint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rsc_1604';
+  function rsct_1604(icdev: longint;zone:smallint;counter:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'rsct_1604';
+
+  function cesc_1604(icdev: longint;zone:smallint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'cesc_1604';
+  function wesc_1604(icdev: longint;zone:smallint;length:smallint; password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'wesc_1604';
+  function resc_1604(icdev: longint;zone:smallint;length:smallint;vpassword:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'resc_1604';
+  function resct_1604(icdev: longint;zone:smallint;counter:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'resct_1604';
+
+  function clrpr_1604(icdev: longint;zone:smallint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'clrpr_1604';
+  function clrrd_1604(icdev: longint;zone:smallint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'clrrd_1604';
+  function fakefus_1604(icdev: longint;mode:smallint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'fakefus_1604';
+  function blow_1604(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'blow_1604';
+  function chk_1604(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'chk_1604';
+  //CPU
+  function cpu_reset(icdev:longint;var databuff:byte):smallint;stdcall;
+  far;external 'MWIC_32.dll' name 'cpu_reset';
+  function cpu_protocol(icdev: longint;len:smallint;var send_cmd:byte;var rece_cmd:byte):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'cpu_protocol';
+  //use general function
+  function ic_init(port: smallint;baud:longint): longint; stdcall;
+  far;external 'MWIC_32.DLL' name 'ic_init';
+  function auto_init(port: smallint;baud:longint): longint; stdcall;
+  far;external 'MWIC_32.DLL' name 'auto_init';
+  function ic_exit(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll' name 'ic_exit';
+  function get_status(icdev: longint; status:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll' name 'get_status';
+  function set_baud(icdev: longint;baud:longint):smallint;stdcall;
+  far;external 'MWIC_32.dll' name 'set_baud';
+
+  function cmp_dvsc(icdev:longint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll' name 'cmp_dvsc';
+  function setsc_md(icdev: longint;mode:smallint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'setsc_md';
+  function srd_dvsc(icdev: longint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'srd_dvsc'
+  function swr_dvsc(icdev: longint;length:smallint;password:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'swr_dvsc';
+ 
+  function turn_off(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'turn_off';
+  function turn_on(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'turn_on';
+  function auto_pull(icdev: longint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'auto_pull';
+  function srd_ver(icdev: longint;length:smallint;ver:pchar):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'srd_ver';
+  function dv_beep(icdev: longint;time:smallint):smallint;stdcall;
+  far;external 'MWIC_32.dll'name 'dv_beep';
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+listbox1.Items.clear;
+
+// icdev:=auto_init(0,9600);
+icdev:=ic_init(0,9600);
+if icdev<=0 then
+       begin
+         listbox1.items.Add('init error');
+         exit;
+       end
+     else
+       listbox1.items.add('init OK');
+
+ st:=get_status(icdev,@status);
+ if st<>0 then
+       begin
+         listbox1.items.Add('Status error');
+         exit;
+       end
+     else
+       listbox1.items.add('Status OK');
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+listbox1.Items.clear;
+st:=chk_4442(icdev);
+if st<>0 then
+       begin
+         listbox1.items.Add('chk_4442 error');
+         exit;
+       end
+     else
+       listbox1.items.add('chk_4442 OK');
+st:=srd_4442(icdev,32,15,data2);
+if st<>0 then
+  begin
+    listbox1.items.add('srd_4442 error');
+    exit;
+  end
+else
+  listbox1.items.add('srd_4442 OK');
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+listbox1.Items.clear;
+st:=chk_4428(icdev);
+if st<>0 then
+       begin
+         listbox1.items.Add('chk_4428 error');
+         exit;
+       end
+     else
+       listbox1.items.add('chk_4428 OK');
+st:=srd_4428(icdev,32,15,data2);
+if st<>0 then
+  begin
+    listbox1.items.add('srd_4428 error');
+    exit;
+  end
+else
+  listbox1.items.add('srd_4428 OK');
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+  i:integer;
+  data:array[0..20] of byte;
+  wdata:array[0..8] of byte;
+  rdata:array[0..13] of byte;
+  hexdata:array[0..26] of char;
+begin
+  wdata[0]:=$0;
+  wdata[1]:=$40;
+  wdata[2]:=$5;
+  wdata[3]:=$0;
+  wdata[4]:=$84;
+  wdata[5]:=$0;
+  wdata[6]:=$0;
+  wdata[7]:=$8;
+  wdata[8]:=$0;
+listbox1.Items.clear;
+st:=cpu_reset(icdev,data[0]);                   //∏¥Œª£ª
+if st<>0 then
+  begin
+    listbox1.items.add('cpu_reset error');
+    exit;
+  end
+else
+   listbox1.items.add('cpu_reset ok');
+
+  for i:=0 to 7 do
+    wdata[8]:=wdata[i] XOR Wdata[8];     //º∆À„BCC
+
+  st:=cpu_protocol(icdev,9,wdata[0],rdata[0]);
+  if st<>0 then
+     begin
+      listbox1.items.add('cpu_protocol error');
+      exit;
+     end
+  else
+      listbox1.items.add('cpu_protocol ok');
+end;
+
+end.
