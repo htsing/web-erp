@@ -1,0 +1,415 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\at1608demo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\at1608demo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 at1608demo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "at1608demo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_AT1608DEMO_DIALOG DIALOGEX 0, 0, 481, 331
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "at1608demo"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,13,310,50,14
+    PUSHBUTTON      "初始化",IDC_INIT,13,280,50,14
+    PUSHBUTTON      "卡复位",IDC_RESET,107,279,50,14,WS_DISABLED
+    LTEXT           "",IDC_STATIC1,7,7,243,8
+    PUSHBUTTON      "比较密码",IDC_PASS,209,277,58,14,WS_DISABLED
+    PUSHBUTTON      "读卡",IDC_RD,305,276,50,14,WS_DISABLED
+    PUSHBUTTON      "写卡",IDC_WR,389,277,50,14,WS_DISABLED
+    PUSHBUTTON      "卡认证",IDC_AUTHORIZAT,105,310,65,14,WS_DISABLED
+    LTEXT           "",IDC_STATIC2,7,22,237,8
+    LTEXT           "",IDC_STATIC3,7,36,238,8
+    LTEXT           "",IDC_STATIC4,7,49,188,8
+    LTEXT           "",IDC_STATIC5,7,63,193,8
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CONTROL         "9600",IDC_9600,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,
+                    14,32,10
+    CONTROL         "19200",IDC_19200,"Button",BS_AUTORADIOBUTTON,7,26,36,10
+    CONTROL         "38400",IDC_38400,"Button",BS_AUTORADIOBUTTON,7,38,36,10
+    CONTROL         "57600",IDC_57600,"Button",BS_AUTORADIOBUTTON,7,50,36,10
+    CONTROL         "115200",IDC_115200,"Button",BS_AUTORADIOBUTTON,7,64,40,
+                    10
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CONTROL         "串口一",IDC_port1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,17,40,10
+    CONTROL         "串口二",IDC_port2,"Button",BS_AUTORADIOBUTTON,23,40,40,
+                    10
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 187, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码对应区"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CONTROL         "0区",IDC_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,
+                    28,10
+    CONTROL         "1区",IDC_1,"Button",BS_AUTORADIOBUTTON,7,15,28,10
+    CONTROL         "2区",IDC_2,"Button",BS_AUTORADIOBUTTON,7,25,28,10
+    CONTROL         "3区",IDC_3,"Button",BS_AUTORADIOBUTTON,7,34,28,10
+    CONTROL         "4区",IDC_4,"Button",BS_AUTORADIOBUTTON,7,44,28,10
+    CONTROL         "5区",IDC_5,"Button",BS_AUTORADIOBUTTON,7,53,28,10
+    CONTROL         "6区",IDC_6,"Button",BS_AUTORADIOBUTTON,7,63,28,10
+    CONTROL         "7区",IDC_7,"Button",BS_AUTORADIOBUTTON,7,74,28,10
+    CONTROL         "Secret Code",IDC_100,"Button",BS_AUTORADIOBUTTON,7,89,
+                    48,10
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 187, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码类别"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    CONTROL         "读权限密码",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,7,56,10
+    CONTROL         "写权限密码",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,25,
+                    56,10
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 187, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    EDITTEXT        IDC_EDIT1,50,38,57,14,ES_AUTOHSCROLL
+    LTEXT           "输入：",IDC_STATIC,7,40,38,8
+END
+
+IDD_DIALOG6 DIALOG DISCARDABLE  0, 0, 123, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读写区"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,66,24,50,14
+    CONTROL         "０区",IDC_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,
+                    32,10
+    CONTROL         "１区",IDC_1,"Button",BS_AUTORADIOBUTTON,7,19,32,10
+    CONTROL         "２区",IDC_2,"Button",BS_AUTORADIOBUTTON,7,29,32,10
+    CONTROL         "３区",IDC_3,"Button",BS_AUTORADIOBUTTON,7,41,32,10
+    CONTROL         "４区",IDC_4,"Button",BS_AUTORADIOBUTTON,7,51,32,10
+    CONTROL         "５区",IDC_5,"Button",BS_AUTORADIOBUTTON,7,62,32,10
+    CONTROL         "６区",IDC_6,"Button",BS_AUTORADIOBUTTON,7,73,32,10
+    CONTROL         "７区",IDC_7,"Button",BS_AUTORADIOBUTTON,7,84,32,10
+    CONTROL         "配置区",IDC_100,"Button",BS_AUTORADIOBUTTON,7,95,40,10
+END
+
+IDD_DIALOG7 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "认证口令"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    EDITTEXT        IDC_EDIT1,39,30,75,13,ES_AUTOHSCROLL
+    LTEXT           "请输入８位：",IDC_STATIC,7,7,56,8
+END
+
+IDD_DIALOG8 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "请输入地址：",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_EDIT1,37,25,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG9 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置区"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    EDITTEXT        IDC_ADDR,71,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEN,71,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATA,53,55,102,14,ES_AUTOHSCROLL
+    LTEXT           "偏移地址：",IDC_STATIC,7,7,58,8
+    LTEXT           "数据长度",IDC_STATIC,7,31,50,8
+    LTEXT           "数据：",IDC_STATIC,7,58,42,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "at1608demo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "at1608demo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "at1608demo.EXE\0"
+            VALUE "ProductName", "at1608demo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_AT1608DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 474
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 at1608demo(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\at1608demo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
