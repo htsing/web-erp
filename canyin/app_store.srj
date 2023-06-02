@@ -1,0 +1,21 @@
+$PBExportHeader$app_store.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\app_store.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\rest_store.pbl,I:\软件程序\SISS\ISSREST50\rest_store.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\iss.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\app_store.pbl,I:\软件程序\SISS\ISSREST50\app_store.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\pub_object.pbl,I:\软件程序\SISS\ISSREST50\pub_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\store_object.pbl,I:\软件程序\SISS\ISSREST50\store_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\store_comm.pbl,I:\软件程序\SISS\ISSREST50\store_comm.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\store_dddw.pbl,I:\软件程序\SISS\ISSREST50\store_dddw.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\store_dw.pbl,I:\软件程序\SISS\ISSREST50\store_dw.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\store_report.pbl,I:\软件程序\SISS\ISSREST50\store_report.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\store_chain.pbl,I:\软件程序\SISS\ISSREST50\store_chain.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_trans.pbl,I:\软件程序\SISS\ISSREST50\cy_trans.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\xlsrpt.pbl,I:\软件程序\SISS\ISSREST50\xlsrpt.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\prn_template.pbl,I:\软件程序\SISS\ISSREST50\prn_template.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\toolbardwmenu.pbl,I:\软件程序\SISS\ISSREST50\toolbardwmenu.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\toolbarstrip.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\canvas.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_dddw.pbl,I:\软件程序\SISS\ISSREST50\cy_dddw.pbr,1

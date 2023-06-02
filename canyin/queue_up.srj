@@ -1,0 +1,16 @@
+$PBExportHeader$queue_up.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\queue_up.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\queue_up.pbl,I:\软件程序\SISS\ISSREST50\queue_up.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\iss.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\queue_up_1.pbl,I:\软件程序\SISS\ISSREST50\queue_up_1.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\pub_object.pbl,I:\软件程序\SISS\ISSREST50\pub_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\toolbarstrip.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\xlsrpt.pbl,I:\软件程序\SISS\ISSREST50\xlsrpt.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\canvas.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_dddw.pbl,I:\软件程序\SISS\ISSREST50\cy_dddw.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\queue_object.pbl,I:\软件程序\SISS\ISSREST50\queue_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\screen_object.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_cp.pbl,I:\软件程序\SISS\ISSREST50\cy_cp.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\rep.pbl,I:\软件程序\SISS\ISSREST50\rep.pbr,1

@@ -1,0 +1,8 @@
+Save Format v3.0(19990112)
+@begin Projects
+ 0 "1&p_app_store_exe&app_store.pbl";
+@end;
+appname "app_store";
+applib "app_store.pbl";
+LibList "app_store.pbl;pub_object.pbl;store_object.pbl;store_comm.pbl;store_dddw.pbl;store_dw.pbl;store_report.pbl;store_chain.pbl;cy_trans.pbl;xlsrpt.pbl;prn_template.pbl;toolbardwmenu.pbl;toolbarstrip.pbl;cy_dddw.pbl;iss.pbd;canvas.pbd";
+type "pb";

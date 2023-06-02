@@ -1,0 +1,25 @@
+$PBExportHeader$cy_screen.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\cy_screen.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\screen_qt.pbl,I:\软件程序\SISS\ISSREST50\screen_qt.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\iss.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_screen.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_screen_q.pbl,I:\软件程序\SISS\ISSREST50\cy_screen_q.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\screen_object.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\screen_dw.pbl,I:\软件程序\SISS\ISSREST50\screen_dw.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\screen_om.pbl,I:\软件程序\SISS\ISSREST50\screen_om.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\pub_object.pbl,I:\软件程序\SISS\ISSREST50\pub_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_dddw.pbl,I:\软件程序\SISS\ISSREST50\cy_dddw.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_bus_dw.pbl,I:\软件程序\SISS\ISSREST50\cy_bus_dw.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_bus_object.pbl,I:\软件程序\SISS\ISSREST50\cy_bus_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_book.pbl,I:\软件程序\SISS\ISSREST50\cy_book.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_cp.pbl,I:\软件程序\SISS\ISSREST50\cy_cp.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\t_member_public.pbl,I:\软件程序\SISS\ISSREST50\t_member_public.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\t_member_screen.pbl,I:\软件程序\SISS\ISSREST50\t_member_screen.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_trans.pbl,I:\软件程序\SISS\ISSREST50\cy_trans.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\xlsrpt.pbl,I:\软件程序\SISS\ISSREST50\xlsrpt.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\toolbardwmenu.pbl,I:\软件程序\SISS\ISSREST50\toolbardwmenu.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\toolbarstrip.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\canvas.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\rep.pbl,I:\软件程序\SISS\ISSREST50\rep.pbr,1

@@ -1,0 +1,8 @@
+$PBExportHeader$ord50.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\ord50.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\ord50.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\ord50_1.pbl,I:\软件程序\SISS\ISSREST50\ord50_1.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\ord_rep.pbl,I:\软件程序\SISS\ISSREST50\ord_rep.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\iss.pbl,,1

@@ -1,0 +1,5 @@
+$PBExportHeader$sissmsg.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\sissmsg.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\sissmsg.pbl,I:\软件程序\SISS\ISSREST50\sissmsg.pbr,1

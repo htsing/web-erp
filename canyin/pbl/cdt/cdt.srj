@@ -1,0 +1,7 @@
+$PBExportHeader$cdt.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\cdt.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\cdt.pbl,I:\软件程序\SISS\ISSREST50\cdt.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cdt_1.pbl,I:\软件程序\SISS\ISSREST50\cdt_1.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cdt_rep.pbl,I:\软件程序\SISS\ISSREST50\cdt_rep.pbr,1

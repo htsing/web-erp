@@ -1,0 +1,12 @@
+$PBExportHeader$auto_chain.srj
+$PBExportComments$Export By Shu<KenShu@163.net>
+EXE:I:\软件程序\SISS\ISSREST50\auto_chain.exe,,0,1
+CMP:0,0,0,2,0,0
+PBD:I:\软件程序\SISS\ISSREST50\auto_chain.pbl,I:\软件程序\SISS\ISSREST50\auto_chain.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\iss.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\auto_chain_1.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\pub_object.pbl,I:\软件程序\SISS\ISSREST50\pub_object.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\cy_trans.pbl,I:\软件程序\SISS\ISSREST50\cy_trans.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\toolbarstrip.pbl,,1
+PBD:I:\软件程序\SISS\ISSREST50\xlsrpt.pbl,I:\软件程序\SISS\ISSREST50\xlsrpt.pbr,1
+PBD:I:\软件程序\SISS\ISSREST50\canvas.pbl,,1

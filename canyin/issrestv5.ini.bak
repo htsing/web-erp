@@ -1,0 +1,206 @@
+[sql2000]
+DBMS=MSS Microsoft SQL Server 6.x
+Database=issrestv5
+ServerName=127.0.0.1
+LogId=sa
+logpassword=
+AutoCommit=False
+DbParm=StaticBind=0
+
+[pos]
+printflag =0
+printer =COM1
+printmode =0
+printertype =北洋BTP-2002CP热敏
+cutpaper =1
+emptyline =6
+HZ =1
+drawer =NONE
+drawer_ord =27,112,0,128,128
+title =
+footer =      欢迎您的光临！
+prt_len =42
+header_lager=0
+print_time=0
+custdisp_type=LANPOS IC-851A
+custdisp_port=NONE
+driver_printer=pdfFactory Pro
+driver_paper=10 A4 Small 210 x 297 mm
+handover_begin_time=2
+local_cookprint_flag=1
+bp_title=您的店名
+bp_coltext=  品名                  数量  价格    金额                                    
+print_time_row=1.00
+driver_printer_zoom=100
+first_login=1
+print_paper_type=A4
+driver_printer1=FinePrint
+driver_paper1=1 Letter 8 1/2 x 11 in
+label_print=1
+label_print_type=北洋L058
+label_print_way=全部打印
+203DT_port=LPT1
+L058_port=COM1
+scr_image=
+scr_banner1=
+scr_banner2=
+scr_banner3=
+detail_lager=0
+self_print_f1=1002
+self_print_f2=2002
+
+[business type]
+point_type=1
+table_floor=01&02&03&
+table_type=01&02&03&04&
+login_mode=1
+refresh_flag=1
+refresh_freq=30
+dishtype_point=
+scr_exit=0
+business_amount=1
+markid=2
+member_depositprint=1
+table_point1=1
+table_point2=01&02&03&04&05&06&07&08&09&10&
+dishseries_point=
+business_mode=2
+quick_table=1
+view_amount=1
+query_curcomputer=0
+opentable_deposit=0
+opentable_sale=0
+opentable_car=1
+orderdish_print=0
+quick_select_table=1
+quick_default_table=Q000
+togo_price_type=价格1
+waiter_operator=0
+togo_person_addr=0
+sys_business_type=2
+busq_netfaild=0
+netfaild_ip=
+business_type=1
+startup_touch_out=0
+power_mode=1
+mode_hand=0
+start_cardid=0
+hangbill_print=0
+ordertonum=0
+dish_print_price=1
+dish_print_total=1
+emptyline=.00
+sale_stepnet=1
+order_enter=0
+dishseries_out=
+table_out1=1
+table_out2=
+cust_scr=0
+opentable_price=0
+opentable_print=0
+safestore_print=0
+drink_print=0
+
+[order dish]
+order_num=1
+negative_purview=1
+material_warn=0
+orderdish_mode=菜品编码
+orderdish_window=2
+select_table=1
+gather_info=1
+member_discount=1
+negative_reason=0
+dish_photo=0
+dish_make=1
+displaytable_out=1
+produce_waiter=0
+quick_default_table=
+dish_autodis=100
+dish_closeshow=0
+order_autosave=1
+face=2
+table_view=1
+out_view=1
+out_personid=0
+likesearch=0
+handover_print_detail=0
+
+[balance]
+print=1
+immediacy_print=1
+input_memberno=1
+back_account=2
+cleartable=0
+cleartable_print=0
+[cp_parameter]
+local_notprint=0
+out_opermode=2
+out_ordertime=999
+out_history=999
+out_refresh=20
+out_printvoucher=1
+out_printwidth=2
+out_transclew=0
+wait_display_tableno=0
+warn_print_hurry=0
+[SQLCA]
+Backup_hq=C:\Documents and Settings\zhuxg.ISS-ZHUXG\桌面
+Backup=F:\V5_rest\source\backup\issfood100924_091617
+data_import=D:\cy40\演示数据\中厨酒楼快餐类\databak
+data_export=F:\餐饮基础数据
+autotrans=0
+[destine]
+destine=0
+save_print=0
+
+[view]
+d_rpt_checkout_flow=tableno&tableno1&
+
+[btmaterial]
+auto_copy=1
+
+
+
+
+[screen]
+lock_times=0
+refresh_times=20
+screen_double=1
+screen_media=1
+media_path=
+picture_path=
+picture_time=3
+scr_lock_oper=0
+display_dish_class=1
+display_dish_type=1
+code_keyboad=1
+scr_new_billno=V10092900025
+OrderDishByCode=0
+self_selection=0
+scr_self_billno=Z10081100001
+double_ad=欢迎来到这个美丽的世界。&这里拥有您想要的一切。&也许您曾经迷惘曾经彷徨。&曾经有一份真挚的爱情，可是我没有去珍惜，等到失去的时候才后悔莫及，尖世家最痛苦的事不过于此。&珍惜，等到失去的时候才后悔莫及，尖世家最痛苦的事不过于此。&
+[store]
+applay_invisible=0
+[Text]
+half_import=
+[member]
+vip_ic_port=
+[emp_card]
+port=1
+baud_rate=9600
+[tel]
+enabl_flag1=0
+enabl_flag2=0
+enabl_flag3=0
+enabl_flag4=0
+comport1=1
+baund1=9600
+baund2=9600
+baund3=9600
+baund4=9600
+prefix_no=
+local_no=
+comport2=2
+[Queue Up]
+queue_type=R
