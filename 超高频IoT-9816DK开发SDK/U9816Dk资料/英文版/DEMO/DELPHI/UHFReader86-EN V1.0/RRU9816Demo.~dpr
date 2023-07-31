@@ -1,0 +1,19 @@
+program RRU9816Demo;
+
+
+
+uses
+  Forms,
+  frmRRU9816demomain in 'frmRRU9816demomain.pas' {frmRRU9816main},
+  RRU9816_Head in 'RRU9816_Head.pas',
+  RRU9816_DLL_Head in 'RRU9816_DLL_Head.pas',
+  fProgressbar in 'fProgressbar.pas' {frmprogress};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmRRU9816main, frmRRU9816main);
+  Application.CreateForm(Tfrmprogress, frmprogress);
+  Application.Run;
+end.
