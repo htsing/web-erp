@@ -36,8 +36,8 @@ public class UfhData {
 	static ExecutorService soundThread = Executors.newSingleThreadExecutor();
 	static int soundid = soundpool.load("/etc/Scan_new.ogg", 1);
 	private static String ufh_id;
-	public static boolean SoundFlag=false;//控制读卡信号
-	public static boolean SoundTimer=false;//发声开关，打开了读到信号就发声
+	public static boolean SoundFlag=false;//鎺у埗璇诲崱淇″彿
+	public static boolean SoundTimer=false;//鍙戝０寮�鍏筹紝鎵撳紑浜嗚鍒颁俊鍙峰氨鍙戝０
 	public static Timer timer;
 	
 	public static void Set_sound(boolean flag) {

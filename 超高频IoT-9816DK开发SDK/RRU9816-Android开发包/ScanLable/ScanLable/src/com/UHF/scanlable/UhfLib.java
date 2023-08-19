@@ -5,7 +5,7 @@ import android.util.Log;
 
 public class UhfLib {
 	private static final String TAG = null;
-	//閻犲洩顕ч崯鎾诲闯閵娧勭暠濞ｅ洠鍓濇导锟�
+	//閻犲洩顕ч崯鎾诲闯閵娧勭暠濞ｅ洠鍓濇导锟?
 	private	byte TVersionInfo[]={-1,-1};
 	private	byte ReaderType[]={-1};
 	private	byte TrType[]={-1};
@@ -21,7 +21,7 @@ public class UhfLib {
 	int len[]={-1};
 	int scan_len[]={-1};
 	private byte s1[]=new byte[25600];
-	//閻犲鍟伴弫銈夊冀閸モ晩鍔悹鍥嚙濞叉牠鎯冮崟顏冪箚闁诡叏鎷�
+	//閻犲鍟伴弫銈夊冀閸モ晩鍔悹鍥嚙濞叉牠鎯冮崟顏冪箚闁诡叏鎷?
 	private byte state[]=new byte[1];
 	private int Cardnum[]=new int[1];
 	private byte pOUcharUIDList[]=new byte[25600];
@@ -118,7 +118,7 @@ public int ReGetInfo()
 	  	return -1;
   }
   
-  //閻犱礁澧介悿鍡欐嫚鐠囨彃鏅搁柛锝冨妿濞堟垶锛愰幋鐑嗗斀闁绘劧鎷� 
+  //閻犱礁澧介悿鍡欐嫚鐠囨彃鏅搁柛锝冨妿濞堟垶锛愰幋鐑嗗斀闁绘劧鎷? 
   public int SetReader_Freq(byte maxfre, byte minfre)
   {
 	  if(WriteFreq(uhf_addr,maxfre,minfre)==0)
@@ -130,7 +130,7 @@ public int ReGetInfo()
 		  return -1;
   }
   
-  //閻犱礁澧介悿鍡欐嫚鐠囨彃鏅搁柛锝冨妿濞堟垵鈻旈姀銏狀棗闁绘粌娴勭槐婵囩▔閹绘帒缍撻柤濂変簻婵晠寮寸�妯荤厐
+  //閻犱礁澧介悿鍡欐嫚鐠囨彃鏅搁柛锝冨妿濞堟垵鈻旈姀銏狀棗闁绘粌娴勭槐婵囩▔閹绘帒缍撻柤濂変簻婵晠寮寸?妯荤厐
   public int SetReader_BaudRate(int fbaud)
   {	  byte fbaud1;
 	  if(fbaud==9600)
